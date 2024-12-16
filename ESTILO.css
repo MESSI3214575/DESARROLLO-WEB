@@ -1,0 +1,92 @@
+ .carousel-item img {
+    height: 400px; /* Ajusta el valor a la altura que desees */
+    object-fit: cover; /* Asegura que la imagen se ajuste sin distorsionarse */
+}
+
+/* Efecto de animación para los botones */
+button:hover, .btn:hover {
+    transform: scale(1.1); /* Aumenta ligeramente el tamaño del botón */
+    transition: transform 0.3s ease-in-out; /* Transición suave */
+}
+
+/* Movimiento suave en las tarjetas al hacer scroll */
+.card {
+    transition: transform 0.3s ease-in-out; /* Transición suave */
+}
+
+.card:hover {
+    transform: translateY(-10px); /* Mueve la tarjeta ligeramente hacia arriba */
+}
+
+.animate-on-scroll {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0.5s ease-in-out;
+}
+
+.animate-on-scroll.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap; /* Permite que los elementos se ajusten en una nueva fila si no caben */
+    justify-content: space-between;
+    gap: 20px; /* Espacio entre las columnas */
+    max-width: 1200px;
+    margin: 0 auto; /* Centra el contenedor */
+}
+
+footer .footer-contact,
+footer .footer-links,
+footer .footer-social,
+footer .footer-copyright {
+    flex: 1 1 300px; /* Esto hace que los elementos ocupen un mínimo de 300px de ancho pero pueden crecer */
+    margin-bottom: 10px;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #007bff;
+}
+
+footer i {
+    margin-right: 10px;
+}
+
+footer h5 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+footer .footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer .footer-links li {
+    margin-bottom: 5px;
+}
+
+footer .footer-social a {
+    display: block; /* Hace que cada enlace se coloque en una nueva línea */
+    margin-bottom: 10px;
+}
+
+footer .footer-copyright {
+    text-align: center;
+    flex-basis: 100%; /* Esto asegura que el copyright ocupe toda la fila al final */
+    margin-top: 20px;
+}
